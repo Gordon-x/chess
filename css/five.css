@@ -1,0 +1,110 @@
+#canvas
+{
+    border: 1px solid black;
+    background: #ddd;
+}
+
+body
+{
+    background: #c0c0c0;
+    text-align: center;
+}
+
+.play {
+    position: relative;
+    margin: 0 auto;
+    width: 1100px;
+    height: 780px;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.user_info {
+    width: 280px;
+    height: 780px;
+    float: right;
+    background: #ddd;
+    color: #555;
+    position: relative;
+}
+
+#white {
+    background: #eee;
+    width: 260px;
+    height: 260px;
+    margin: 10px;
+    position: absolute;
+    top: 0;
+}
+
+#black {
+    background: #eee;
+    width: 260px;
+    height: 260px;
+    margin: 10px;
+    position: absolute;
+    bottom: 0;
+}
+
+.rec {
+    padding: 10px;
+    text-align: left;
+    font-weight: bolder;
+}
+
+.rec span {
+    padding: 20px;
+}
+
+.active {
+    color: #42b3de !important;
+    background: #fff !important;
+}
+
+#black_win, #white_win {
+    font-size: 30px;
+    color: #f00;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    display: inline-block;
+}
+
+.mask {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.mask button {
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    letter-spacing: 5px;
+    background: #63dc63;
+    color: #fff;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin-top: -25px;
+    margin-left: -100px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+}
+
+.change {
+    display: none;
+}
